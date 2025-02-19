@@ -1,6 +1,6 @@
 {
   "name": "@telepix-lab/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "TelePIX ESLint config for eslint 9+",
   "main": "index.mjs",
   "type": "module",
