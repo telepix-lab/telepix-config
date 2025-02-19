@@ -9,7 +9,13 @@ export default {
     sourcemap: true,
     preserveModules: true,
     preserveModulesRoot: ".",
-    exports: "named",
+    exports: "auto",
+    interop: "auto",
   },
-  plugins: [commonjs(), json()],
+  plugins: [
+    commonjs({
+      requireReturnsDefault: "auto",
+    }),
+    json(),
+  ],
 };
