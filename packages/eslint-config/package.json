@@ -1,23 +1,41 @@
 {
-  "name": "@telepix-lab/eslint-config",
+  "name": "@telepix/eslint-config",
   "version": "0.0.1",
-  "description": "TelePIX ESLint config for eslint 9+",
-  "main": "index.mjs",
-  "type": "module",
+  "description": "Telepix ESLint configuration",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "typescript",
+    "react"
+  ],
+  "author": "Telepix",
+  "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">=9.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "typescript-eslint": "^7.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.20.0",
-    "@typescript-eslint/parser": "^8.24.1",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-prettier": "^5.2.3",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "eslint-plugin-tailwindcss": "^3.18.0",
-    "globals": "^15.14.0",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.1"
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rollup": "^4.0.0"
   }
 }
