@@ -1,25 +1,47 @@
+# Source files
+index.mjs
+rollup.config.js
+
 # Development files
-.github/
-.vscode/
-example/
-node_modules/
+.eslintrc*
+.prettierrc*
+.editorconfig
+.gitignore
+.git
 
-# Build outputs
-dist/
-build/
-coverage/
+# Build process
+node_modules
+tsconfig.json
+*.tsbuildinfo
 
-# Source maps
-**/*.map
+# Test files
+test
+tests
+__tests__
+*.test.*
+*.spec.*
 
-# Log files
+# Examples and docs
+example
+docs
+*.md
+
+# IDE
+.vscode
+.idea
+*.sublime-*
+
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Editor files
+# OS generated files
 .DS_Store
-.idea/
-*.swp
-*.swo
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "example": "pnpm --filter example"
+    "example": "pnpm --filter example",
+    "eslint": "pnpm --filter eslint-config"
   },
   "packageManager": "pnpm@10.4.1"
 }
