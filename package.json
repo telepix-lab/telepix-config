@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "example": "pnpm --filter example",
-    "eslint": "pnpm --filter eslint-config"
+    "eslint": "pnpm --filter @telepix-lab/eslint-config"
   },
   "packageManager": "pnpm@10.4.1"
 }
