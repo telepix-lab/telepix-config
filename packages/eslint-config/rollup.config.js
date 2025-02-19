@@ -1,6 +1,5 @@
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
-import nodeResolve from "@rollup/plugin-node-resolve";
 
 export default {
   input: "index.mjs",
@@ -12,11 +11,5 @@ export default {
     preserveModulesRoot: ".",
     exports: "named",
   },
-  plugins: [
-    commonjs(),
-    nodeResolve({
-      preferBuiltins: true,
-    }),
-    json(),
-  ],
+  plugins: [commonjs(), json()],
 };
