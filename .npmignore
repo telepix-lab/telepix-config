@@ -1,0 +1,25 @@
+# Development files
+.github/
+.vscode/
+example/
+node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Source maps
+**/*.map
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.DS_Store
+.idea/
+*.swp
+*.swo
