@@ -1,12 +1,10 @@
 # Installation
 
 ```bash
-pnpm add -D @telepix-lab/eslint-config
+pnpm add -D eslint typescript-eslint @telepix-lab/eslint-config
 ```
 
 # Usage
-
-vite ts-swc template을 기준으로 설명합니다.
 
 ```ts
 // eslint.config.js
