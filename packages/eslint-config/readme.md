@@ -22,6 +22,7 @@ pnpm add -D eslint typescript-eslint @telepix-lab/eslint-config
 
 ```ts
 // eslint.config.js
+
 import telepixConfig from "@telepix-lab/eslint-config";
 import tseslint from "typescript-eslint";
 
