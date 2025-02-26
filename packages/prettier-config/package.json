@@ -1,0 +1,27 @@
+{
+  "name": "@telepix-lab/prettier-config",
+  "version": "0.0.1",
+  "description": "Telepix Prettier configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "prettier",
+    "prettierconfig",
+    "telepix"
+  ],
+  "author": "Telepix",
+  "license": "MIT",
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
+  },
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "rollup": "^4.0.0"
+  }
+}
