@@ -25,16 +25,6 @@ export default tseslint.config(
     },
   },
 
-  // prettier config
-  eslintPluginPrettierRecommended,
-  eslintConfigPrettier,
-  {
-    rules: {
-      /* prettier 설정 경고 처리 */
-      "prettier/prettier": "warn",
-    },
-  },
-
   // tailwindcss config
   ...eslintPluginTailwindcss.configs["flat/recommended"],
   {
@@ -42,6 +32,16 @@ export default tseslint.config(
       "tailwindcss/no-custom-classname": "warn",
       "tailwindcss/enforces-shorthand": "warn",
       "tailwindcss/classnames-order": "warn",
+    },
+  },
+
+  // prettier config
+  eslintPluginPrettierRecommended,
+  eslintConfigPrettier,
+  {
+    rules: {
+      /* prettier 설정 경고 처리 */
+      "prettier/prettier": "warn",
     },
   },
 
