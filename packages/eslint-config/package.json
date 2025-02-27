@@ -1,6 +1,6 @@
 {
   "name": "@telepix-lab/eslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Telepix ESLint configuration",
   "type": "module",
   "main": "./dist/cjs/index.js",
