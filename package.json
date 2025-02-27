@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "example": "pnpm --filter example",
-    "eslint": "pnpm --filter @telepix-lab/eslint-config"
+    "eslint": "pnpm --filter @telepix-lab/eslint-config",
+    "dpc": "pnpm --filter @telepix-lab/design-primitive-colors"
   },
   "packageManager": "pnpm@10.4.1"
 }

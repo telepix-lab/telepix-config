@@ -5,3 +5,4 @@
 ## Packages
 
 - [eslint-config](./packages/eslint-config/readme.md)
+- [design-primitive-colors](./packages/design-primitive-colors/readme.md)
