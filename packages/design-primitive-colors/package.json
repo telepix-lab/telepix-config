@@ -11,6 +11,9 @@
       "require": "./dist/cjs/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
