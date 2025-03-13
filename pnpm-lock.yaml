@@ -51,6 +51,12 @@ importers:
         specifier: ^6.1.0
         version: 6.1.0(jiti@1.21.7)(yaml@2.7.0)
 
+  packages/design-primitive-colors:
+    devDependencies:
+      rollup:
+        specifier: ^4.0.0
+        version: 4.34.8
+
   packages/eslint-config:
     dependencies:
       '@eslint/js':
@@ -68,9 +74,6 @@ importers:
       eslint-plugin-react:
         specifier: ^7.33.0
         version: 7.37.4(eslint@9.20.1(jiti@1.21.7))
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.2(eslint@9.20.1(jiti@1.21.7))
       eslint-plugin-react-refresh:
         specifier: ^0.4.0
         version: 0.4.19(eslint@9.20.1(jiti@1.21.7))
@@ -80,6 +83,9 @@ importers:
       globals:
         specifier: ^15.14.0
         version: 15.15.0
+      typescript:
+        specifier: '>=5.0.0'
+        version: 5.7.3
       typescript-eslint:
         specifier: ^8.22.0
         version: 8.24.1(eslint@9.20.1(jiti@1.21.7))(typescript@5.7.3)
@@ -90,6 +96,9 @@ importers:
       '@rollup/plugin-json':
         specifier: ^6.0.0
         version: 6.1.0(rollup@4.34.8)
+      eslint-plugin-react-hooks:
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.20.1(jiti@1.21.7))
       rollup:
         specifier: ^4.0.0
         version: 4.34.8
@@ -896,11 +905,11 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-hooks@4.6.2:
-    resolution: {integrity: sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==}
+  eslint-plugin-react-hooks@5.2.0:
+    resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
     engines: {node: '>=10'}
     peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
   eslint-plugin-react-refresh@0.4.19:
     resolution: {integrity: sha512-eyy8pcr/YxSYjBoqIFSrlbn9i/xvxUFa8CjzAYo9cFjgGXqq1hyjihcpZvxRLalpaWmueWR81xn7vuKmAFijDQ==}
@@ -2668,7 +2677,7 @@ snapshots:
     optionalDependencies:
       eslint-config-prettier: 9.1.0(eslint@9.20.1(jiti@1.21.7))
 
-  eslint-plugin-react-hooks@4.6.2(eslint@9.20.1(jiti@1.21.7)):
+  eslint-plugin-react-hooks@5.2.0(eslint@9.20.1(jiti@1.21.7)):
     dependencies:
       eslint: 9.20.1(jiti@1.21.7)
 
