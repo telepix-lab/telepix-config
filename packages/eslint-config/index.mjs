@@ -4,7 +4,6 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 import eslintPluginReact from "eslint-plugin-react";
 import eslintPluginReactHooks from "eslint-plugin-react-hooks";
 import eslintPluginReactRefresh from "eslint-plugin-react-refresh";
-import eslintPluginTailwindcss from "eslint-plugin-tailwindcss";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
@@ -22,16 +21,6 @@ export default tseslint.config(
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
       },
-    },
-  },
-
-  // tailwindcss config
-  ...eslintPluginTailwindcss.configs["flat/recommended"],
-  {
-    rules: {
-      "tailwindcss/no-custom-classname": "warn",
-      "tailwindcss/enforces-shorthand": "warn",
-      "tailwindcss/classnames-order": "warn",
     },
   },
 
