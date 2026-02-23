@@ -8,5 +8,10 @@
     "eslint": "pnpm --filter @telepix-lab/eslint-config",
     "dpc": "pnpm --filter @telepix-lab/design-primitive-colors"
   },
-  "packageManager": "pnpm@10.4.1"
+  "packageManager": "pnpm@10.4.1",
+  "pnpm": {
+    "overrides": {
+      "minimatch": ">=10.2.1"
+    }
+  }
 }
