@@ -24,7 +24,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10.4.1 # 프로젝트 버전에 맞춰 설정
+          version: 10.4.1
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -37,11 +37,14 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build packages
-        # 각 패키지의 build 스크립트가 있다면 실행
-        # 모노레포 하위 패키지(예: eslint-config, example 등) 중 build 스크립트가 있는 프로젝트만 자동으로 실행됩니다.
         run: pnpm -r run build
 
       - name: Publish to npm
-        # pnpm publish -r 옵션은 레지스트리에 이미 배포된 버전을 자동으로 건너뛰고 새 버전만 배포합니다.
-        # --provenance 옵션을 통해 Trusted Publishing (OIDC) 토큰 기반 인증을 수행합니다.
-        run: pnpm publish -r --access public --no-git-checks --provenance
+        run: |
+          for dir in packages/*/; do
+            if [ -f "$dir/package.json" ]; then
+              cd "$dir"
+              npm publish --provenance --access public 2>&1 | grep -v "already exists" || true
+              cd $GITHUB_WORKSPACE
+            fi
+          done
